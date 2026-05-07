@@ -1,0 +1,26 @@
+name: Support Request
+description: Ask a question or request help using one of the apps.
+title: "[Support]: "
+labels: ["question"]
+
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which app is this related to?
+      options:
+        - Diabetic Sidekick
+        - App Two
+        - App Three
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: How can we help?
+      placeholder: Describe your question or issue.
+    validations:
+      required: true
+

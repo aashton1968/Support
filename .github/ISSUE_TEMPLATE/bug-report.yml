@@ -1,0 +1,42 @@
+name: Bug Report
+description: Report a problem or unexpected behavior in one of the apps.
+title: "[Bug]: "
+labels: ["bug"]
+
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which app is this issue for?
+      options:
+        - Diabetic Sidekick
+        - App Two
+        - App Three
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the issue
+      placeholder: What happened? What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: Step-by-step instructions to trigger the issue.
+    validations:
+      required: false
+
+  - type: textarea
+    id: device
+    attributes:
+      label: Device & OS
+      placeholder: "Example: iPhone 15 Pro, iOS 17.4"
+    validations:
+      required: true
+
