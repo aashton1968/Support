@@ -9,9 +9,9 @@ body:
     attributes:
       label: Which app is this related to?
       options:
-        - Diabetic Sidekick
-        - App Two
-        - App Three
+        - Financial Sidekick
+        - Medication Sidekick
+        - Memory Sidekick
         - Other
     validations:
       required: true
@@ -24,3 +24,9 @@ body:
     validations:
       required: true
 
+labels:
+  - question
+  - app:financial-sidekick: if(app == "Financial Sidekick")
+  - app:medication-sidekick: if(app == "Medication Sidekick")
+  - app:memory-sidekick: if(app == "Memory Sidekick")
+  - app:other: if(app == "Other")
